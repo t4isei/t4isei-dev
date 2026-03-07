@@ -25,12 +25,23 @@ export default function Home() {
       </div>
       <div className='mt-10 flex flex-col gap-5'>
         <section>
-          <SectionTitle>work</SectionTitle>
-          <p>
-            Working full-time as a software enginner, I&apos;m involved in both
-            frontend (TypeScript | React | Next.js) and backend (Java | Spring
-            Boot | Python) dev.
-          </p>
+          <SectionTitle>about</SectionTitle>
+          <p>I work as a software engineer.</p>
+        </section>
+        <section>
+          <SectionTitle>career</SectionTitle>
+          <div className='mb-3'>
+            <p className='font-bold'>Software Engineer</p>
+            <p>Frontend development for a mail service.</p>
+          </div>
+          <div className='mb-3'>
+            <p className='font-bold'>Software Engineer</p>
+            <p>Development of a AI chat service.</p>
+          </div>
+          <div>
+            <p className='font-bold'>Software Engineer (Part-time)</p>
+            <p>Development of a web application for asteroid discovery.</p>
+          </div>
         </section>
         <section>
           <SectionTitle>roommate</SectionTitle>
