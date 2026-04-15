@@ -8,7 +8,7 @@ export function Header() {
   return (
     <header className='mx-5 my-5 flex justify-between sm:mx-12'>
       <Link href='/' className='pointer hover:animate-pulse'>
-        <h1 className='text-xl font-bold'>nefleia</h1>
+        <h1 className='text-xl font-bold'>t4isei</h1>
       </Link>
       <ul className='flex items-center gap-3 sm:gap-6'>
         <li>

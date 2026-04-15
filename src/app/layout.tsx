@@ -13,7 +13,7 @@ const nunitoSans = Nunito_Sans({
 });
 
 export const metadata: Metadata = {
-  title: 'nefleia',
+  title: 't4isei',
   description: 'Return to nature.',
 };
 
