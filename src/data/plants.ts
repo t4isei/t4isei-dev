@@ -11,4 +11,6 @@ export const plants: Plant[] = [
   { name: 'monstera friedrichsthalii' },
   { name: 'phlebodium davana' },
   { name: 'philodendron oxycardium' },
+  { name: 'parodia scopa' },
+  { name: 'aloe brevifolia' },
 ];

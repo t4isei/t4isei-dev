@@ -21,7 +21,7 @@ export default function Home() {
             className='tablet:size-40 hover:animate-spin-slowest size-32 rounded-full object-cover'
           />
         </div>
-        <h1 className='text-2xl font-bold'>t4isei</h1>
+        <h1 className='text-2xl font-bold'>Taisei Hasegawa</h1>
       </div>
       <div className='mt-10 flex flex-col gap-5'>
         <section>
