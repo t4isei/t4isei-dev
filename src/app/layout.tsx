@@ -1,3 +1,4 @@
+import { Analytics } from '@vercel/analytics/next';
 import { Nunito_Sans } from 'next/font/google';
 
 import { Footer } from '@/components/Footer';
@@ -32,6 +33,7 @@ export default function RootLayout({
           {children}
         </main>
         <Footer />
+        <Analytics />
       </body>
     </html>
   );
