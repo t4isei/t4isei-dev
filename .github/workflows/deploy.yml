@@ -11,6 +11,7 @@ on:
 jobs:
   Deploy-Production:
     runs-on: ubuntu-latest
+    timeout-minutes: 10
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
@@ -26,7 +27,7 @@ jobs:
           cache: 'pnpm'
 
       - name: Install Vercel CLI
-        run: pnpm install --global vercel@latest
+        run: pnpm install --global vercel@65.10.0
 
       - name: Pull Vercel Environment Information
         run: vercel pull --yes --environment=production --token=${{ secrets.VERCEL_TOKEN }}
