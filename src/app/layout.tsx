@@ -29,7 +29,7 @@ export default function RootLayout({
         className={`${nunitoSans.variable} flex min-h-dvh flex-col font-sans antialiased`}
       >
         <Header />
-        <main className='mx-auto my-10 max-w-3xl flex-grow px-5 sm:px-10'>
+        <main className='mx-auto my-10 w-full max-w-3xl flex-grow px-5 sm:px-10'>
           {children}
         </main>
         <Footer />
