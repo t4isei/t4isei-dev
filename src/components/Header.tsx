@@ -17,11 +17,6 @@ export function Header() {
           </Link>
         </li>
         <li>
-          <Link href='/blogs'>
-            <h2 className='hover:animate-wiggle-x font-bold'>blogs</h2>
-          </Link>
-        </li>
-        <li>
           <LinkIcon url={links.github}>
             <Icon
               icon='ri:github-fill'

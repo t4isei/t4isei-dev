@@ -1,31 +1,16 @@
 import Link from 'next/link';
-import React from 'react';
 
 import { BlogContent } from '@/components/blogs/BlogContent';
-import { client } from '@/libs/client';
 import { Blog } from '@/types/micro-cms';
 
 type Props = {
-  params: Promise<{ blogId: string }>;
+  blog: Blog;
 };
 
-export default async function BlogDetail(props: Props) {
-  const { blogId } = await props.params;
-
-  const data: Blog = await client
-    .get({
-      endpoint: 'blogs',
-      contentId: blogId,
-    })
-    .then((res) => res);
-
-  if (!data) {
-    return <div>not found article</div>;
-  }
-
+export function BlogDetail({ blog }: Props) {
   return (
     <div className='flex flex-col items-center justify-center'>
-      <BlogContent blog={data} />
+      <BlogContent blog={blog} />
       <Link
         href='/blogs'
         className='radius-2 mt-20 rounded-md border-1 px-2 py-1 hover:bg-gray-200'
